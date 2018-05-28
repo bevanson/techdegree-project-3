@@ -1,0 +1,155 @@
+/* main styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
+p {
+  opacity: 0.7;
+}
+/* header styles */
+
+.sub-header {
+  padding-bottom: 4%;
+  border-bottom: 5px solid black;
+  text-align: center;
+}
+
+.main-header {
+  background: #343e4f;
+  color: #fff;
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* form styles */
+
+#container {
+  max-width: 90%;
+  margin: auto;
+  color: #343e4f;
+}
+
+.topRows > input,
+.topRows > select{
+  font-size: 1em;
+  width: 100%;
+  color: #222;
+  font-weight: 300;
+  border: none;
+  padding: 15px;
+  outline: 0;
+  margin: 10px auto;
+  border-radius: .3em;
+  background-color: #e8eeef;
+}
+
+.topRows > input:focus,
+select:focus {
+  border: 3px solid #343e4f;
+}
+
+fieldset {
+  border: 0;
+}
+
+select {
+  height: 60px;
+}
+
+.required ::-webkit-input-placeholder {
+  color: #adb2b7;
+  text-align: right;
+  padding: 0 20px;
+  font-style: italic;
+}
+
+label,
+select {
+  margin: 30px 0;
+  opacity: 0.7;
+}
+
+legend {
+  font-size: .8em;
+}
+
+.form {
+  border-top: 2px solid black;
+  margin-top: 3px;
+}
+
+fieldset .zip {
+  width: 30%;
+}
+
+/* bottom styles */
+
+.bottom > label.checkbox,
+.bottom > label.radio {
+  margin: 5px 20px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.options {
+  display: inline-block;
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  background-color: #efefef;
+  border: none;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+}
+
+.button {
+  padding: 19px 39px 18px 39px;
+  margin-top: 20px;
+  color: #FFF;
+  background-color: #50e0cf;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #50e0cf;
+  border-width: 1px 1px 3px;
+}
+
+/* media query for desktop */
+
+@media (min-width: 768px) {
+  #container {
+    width: 70%;
+  }
+  .topRows {
+    display: flex;
+    flex-direction: row;
+  }
+  .top label {
+    flex-basis: 40%;
+    max-width: 150px;
+  }
+  .zipRow {
+    float: left;
+  }
+  .zipRow > input {
+    width: 65%;
+    margin-left: 20%;
+
+  }
+}
